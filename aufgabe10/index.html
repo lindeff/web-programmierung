@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome</title>
+</head>
+
+<body>
+    <div id="question" class="card">
+        <h1>What's your name?</h1>
+        <form id="name-form">
+            <input type="text" id="name-input" placeholder="Enter your name" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="greeting" class="card" style="display: none;">
+        <h2>Hello, <span id="user-name"></span>!</h2>
+    </div>
+    <script src="ts/script.js"></script>
+</body>
+
+</html>

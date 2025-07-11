@@ -1,0 +1,34 @@
+body {
+    background-color: lightgreen;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div {
+    border-style: solid;
+    margin: 20px;
+    padding: 20px;
+    background-color: bisque;
+}
+
+div > div {
+    border-style: solid;
+    margin: 20px;
+    padding: 20px;
+    background-color: lightgreen;
+}
+
+table {
+    border-spacing: 20px 10px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+#name {
+    margin-left: 20px;
+    color: darkslategray;
+}

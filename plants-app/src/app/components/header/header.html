@@ -1,0 +1,16 @@
+<nav class="navbar navbar-light justify-content-center custom-navbar">
+    <ul class="nav">
+        <li><a class="nav-link" routerLink="/" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+        <li class="dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"
+                routerLink="/details" routerLinkActive="active">Collection</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Anthurium</a></li>
+                <li><a class="dropdown-item" href="#">Alocasia</a></li>
+            </ul>
+        </li>
+        <li><a class="nav-link" routerLink="/about" routerLinkActive="active">About</a></li>
+        <li><a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a></li>
+    </ul>
+</nav>

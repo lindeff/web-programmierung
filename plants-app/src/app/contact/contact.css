@@ -1,0 +1,32 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+   padding-top: 190px;
+}
+
+.form-wrapper {
+  width: 300px;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  margin-bottom: 120px;
+  color: darkkhaki;
+}
+
+.form-wrapper button {
+  background-color: darkkhaki;
+  color: #252525;
+  border: none;
+}
+
+.background-wrapper {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}

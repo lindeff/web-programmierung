@@ -1,0 +1,134 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: Gloock-Regular;
+}
+
+.blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("img/pexels-stanislav-kondratiev-2908984.jpg");
+    background-repeat: repeat;
+    background-size: 65% 85%;
+    background-position: left top;
+
+    filter: blur(4px);
+    z-index: -1;
+}
+
+.flex-form {
+    background: rgb(255, 231, 206);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.button-wrapper button {
+    border: none;
+    border-radius: 12px;
+    padding: 18px 18px;
+    font-size: larger;
+    font-weight: 600;
+    background-color: rgb(255 209 91);
+}
+
+.form-column {
+    flex: 1 1 calc(50% - 1rem);
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+    width: 88%;
+}
+
+.input-area {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.textarea-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.textarea-wrapper textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.error-message {
+    color: rgb(253 131 125);
+    font-family: Helvetica;
+    font-size: small;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.error-icon {
+    position: absolute;
+    top: 50%;
+    right: 0.25rem;
+    transform: translateY(-50%);
+    font-size: large;
+    color: black;
+    user-select: none;
+    display: none;
+}
+
+.required::after {
+    content: " *";
+    color: red;
+}
+
+.centered-heading {
+    text-align: center;
+    width: 100%;
+}
+
+#title {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 70px;
+}
+
+
+@font-face {
+    font-family: 'Gloock-Regular';
+    src: url('fonts/Gloock-Regular.ttf') format('truetype');
+}

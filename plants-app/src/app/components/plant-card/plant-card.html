@@ -1,0 +1,15 @@
+<div class="plant-card">
+  <div class="image-wrapper" 
+    (mouseenter)="onMouseEnter($event)"
+    (mouseleave)="onMouseLeave($event)">
+    
+    <a [href]="hoverImageUrl" class="glightbox" data-gallery="bvep">
+      <img class="img-fluid" [src]="hovered ? hoverImageUrl : coverImageUrl" alt="{{name}}">
+    </a>
+  </div>
+
+  <div class="plant-info">
+    <strong>{{ name }}</strong>
+    <p>€{{ price }},00 EUR</p>
+  </div>
+</div>

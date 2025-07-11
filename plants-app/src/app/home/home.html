@@ -1,0 +1,18 @@
+<div class="background-wrapper" [ngStyle]="{ 'background-image': 'url(assets/background.jpg)' }">
+  <app-header></app-header>
+
+  <div class="content-wrapper">
+    <!-- Your home page main content goes here -->
+  </div>
+</div>
+
+<!-- Highlight Section -->
+<div class="highlight-wrapper" [ngStyle]="{ 'background-image': 'url(assets/background-black.jpg)' }">
+  <p class="text-center fs-2 title">Highlights</p>
+    <app-plant-card
+      [name]="'Anthurium BVEP/Antolakii'"
+      [price]="30"
+      [coverImageUrl]="'assets/cover-bvep.png'"
+      [hoverImageUrl]="'assets/bvep.jpg'">
+    </app-plant-card>
+</div>
