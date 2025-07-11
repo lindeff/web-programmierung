@@ -1,11 +1,11 @@
-<div class="plant-card">
+<div class="plant-card" (click)="openGallery()">
   <div class="image-wrapper" 
     (mouseenter)="onMouseEnter($event)"
     (mouseleave)="onMouseLeave($event)">
     
-    <a [href]="hoverImageUrl" class="glightbox" data-gallery="bvep">
+
       <img class="img-fluid" [src]="hovered ? hoverImageUrl : coverImageUrl" alt="{{name}}">
-    </a>
+
   </div>
 
   <div class="plant-info">

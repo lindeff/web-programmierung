@@ -8,6 +8,10 @@
     margin: 5rem;
 }
 
+.plant-card:hover {
+    cursor: pointer;
+}
+
 .image-wrapper {
     display: flex;
     justify-content: center;

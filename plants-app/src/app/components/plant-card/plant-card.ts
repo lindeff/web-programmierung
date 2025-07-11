@@ -8,7 +8,7 @@ import GLightbox from 'glightbox';
   templateUrl: './plant-card.html',
   styleUrl: './plant-card.css'
 })
-export class PlantCard implements AfterViewInit {
+export class PlantCard {
   @Input() name!: string;
   @Input() price!: number;
   @Input() coverImageUrl!: string;
@@ -16,9 +16,22 @@ export class PlantCard implements AfterViewInit {
 
   hovered: boolean = false;
 
-  ngAfterViewInit(): void {
-  GLightbox({ selector: '.glightbox' });
-}
+  lightbox: any;
+
+  gallery = [
+    { href: 'assets/bvep.jpg', title: 'Main view' },
+    { href: 'assets/background-house.jpg', title: 'Side view' },
+  ];
+
+  openGallery() {
+    this.lightbox = GLightbox({
+      // @ts-expect-error - elements is supported, just not typed
+      elements: this.gallery,
+      loop: true,
+      touchNavigation: true
+    });
+    this.lightbox.open();
+  }
 
   onMouseEnter(event: MouseEvent) {
     this.hovered = true;
