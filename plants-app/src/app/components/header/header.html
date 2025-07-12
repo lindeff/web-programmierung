@@ -2,12 +2,13 @@
     <ul class="nav">
         <li><a class="nav-link" routerLink="/" routerLinkActive="active"
                 [routerLinkActiveOptions]="{exact: true}">Home</a></li>
-        <li class="dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"
-                routerLink="/details" routerLinkActive="active">Collection</a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+                Collection
+            </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Anthurium</a></li>
-                <li><a class="dropdown-item" href="#">Alocasia</a></li>
+                <li><a class="dropdown-item" routerLink="/details/anthurium">Anthurium</a></li>
+                <li><a class="dropdown-item" routerLink="/details/alocasia">Alocasia</a></li>
             </ul>
         </li>
         <li><a class="nav-link" routerLink="/about" routerLinkActive="active">About</a></li>

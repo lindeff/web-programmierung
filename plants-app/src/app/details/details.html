@@ -1,1 +1,129 @@
-<p>details works!</p>
+<div class="background-wrapper" [ngStyle]="{ 'background-image': 'url(assets/background-black.jpg)' }">
+    <app-header></app-header>
+
+    <div class="container">
+        <h1 class="text-center mb-4">Anthurium – Allgemeine Infos & Pflegetipps</h1>
+
+        <div class="row align-items-start g-4 mb-5">
+            <!-- Carousel -->
+            <div class="col-md-6">
+                <div id="anthuriumCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner rounded shadow">
+                        <div class="carousel-item active">
+                            <img src="assets/mr-worldwide.jpg" class="d-block w-100" alt="Anthurium Bild 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Anthurium Mr. Worldwide</h5>
+                                <p>Hybrid von 'Indo Portillae' und 'NSE Portillae'</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/bvep.jpg" class="d-block w-100" alt="Anthurium Bild 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Anthurium Antolakii (BVEP/Black Velvet Eastern Panama)</h5>
+                                <p>Wildart aus Guna Yala, Panama</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#anthuriumCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#anthuriumCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Text content -->
+            <div class="col-md-6">
+                <h3>Über Anthurien</h3>
+                <p>
+                    Anthurien, auch bekannt als „Flamingoblume“ oder „Laceleaf“, sind tropische Pflanzen, die in den
+                    feuchten
+                    Regenwäldern Mittel- und Südamerikas beheimatet sind. Sie sind besonders beliebt als Zimmerpflanzen,
+                    da sie
+                    mit ihren glänzenden, herzförmigen Blättern und den auffälligen, oft roten oder pinkfarbenen
+                    Hochblättern einen
+                    exotischen Akzent setzen.
+                </p>
+                <p>
+                    Anthurien bevorzugen eine warme Umgebung mit hoher Luftfeuchtigkeit, was ihre Herkunft aus
+                    tropischen Klimazonen widerspiegelt.
+
+                    Die vielfältigen Arten und Sorten bieten für jeden Geschmack die passende Pflanze, von großen
+                    Blattschmuckpflanzen bis hin zu
+                    kleineren, kompakten Sorten.
+                </p>
+
+                <h4 class="mt-4">Pflegetipps</h4>
+                <ul>
+                    <li><strong>Licht:</strong> Anthurien gedeihen am besten bei hellem, indirektem Licht. Direkte
+                        Sonneneinstrahlung sollte
+                        vermieden werden, da sie die Blätter verbrennen kann. Ein Platz in der Nähe eines Fensters mit
+                        leichter Beschattung
+                        ist ideal.</li>
+                    <li><strong>Gießen:</strong> Gießen Sie die Pflanze regelmäßig, sodass die oberste Erdschicht leicht
+                        antrocknet, aber nicht
+                        vollständig austrocknet. Staunässe muss unbedingt vermieden werden, da dies zu Wurzelfäule
+                        führen kann.</li>
+                    <li><strong>Luftfeuchtigkeit:</strong> Anthurien lieben eine hohe Luftfeuchtigkeit. Besprühen Sie
+                        die Blätter regelmäßig
+                        mit Wasser oder verwenden Sie einen Luftbefeuchter, um optimale Wachstumsbedingungen zu
+                        schaffen.</li>
+                    <li><strong>Temperatur:</strong> Die ideale Temperatur liegt zwischen 18 und 25 Grad Celsius.
+                        Zugluft und plötzliche
+                        Temperaturschwankungen sollten vermieden werden, um Stress für die Pflanze zu verhindern.</li>
+                    <li><strong>Düngung:</strong> Während der Wachstumsphase im Frühling und Sommer sollten Sie die
+                        Pflanze monatlich mit
+                        einem ausgewogenen Flüssigdünger versorgen. Im Herbst und Winter kann die Düngung reduziert oder
+                        ausgesetzt werden.</li>
+                    <li><strong>Umtopfen:</strong> Alle zwei bis drei Jahre ist es empfehlenswert, Anthurien in frische,
+                        gut durchlässige Erde umzutopfen,
+                        um die Nährstoffversorgung sicherzustellen und das Wachstum zu fördern.</li>
+                    <li><strong>Schädlinge:</strong> Achten Sie auf mögliche Schädlinge wie Blattläuse, Spinnmilben oder
+                        Schmierläuse und behandeln
+                        Sie die Pflanze bei Befall zeitnah mit geeigneten Mitteln.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center">
+            <h3 class="mt-5">Bekannte Züchter</h3>
+            <p class="fw-bold fs-4 text-warning shadow-sm p-2 rounded d-inline-block">
+                Doc Block (USA)
+            </p>
+        </div>
+
+        <!-- GLightbox video trigger -->
+        <div class="text-center pb-5">
+            <a href="https://www.youtube.com/watch?v=t4rPIBKM824&t" class="glightbox btn" data-type="video"
+                data-title="Doc Block besucht von OnlyPlants">
+                <div class="video-thumb-container"
+                    style="position: relative; display: inline-block; cursor: pointer; max-width: 600px;">
+                    <img src="https://img.youtube.com/vi/t4rPIBKM824/maxresdefault.jpg" alt="Doc Block Interview"
+                        class="img-fluid rounded shadow" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_play_button_icon_%282013%E2%80%932017%29.svg"
+                        alt="Play Icon" class="play-icon-overlay" />
+                </div>
+            </a>
+        </div>
+        <div class="text-center">
+        <p class="fw-bold fs-4 text-warning shadow-sm p-2 rounded d-inline-block">
+            Silver Krome Gardens (USA)
+        </p>
+    </div>
+
+    <!-- GLightbox video trigger -->
+    <div class="text-center pb-5">
+        <a href="https://www.youtube.com/watch?v=PPehcVUjqzw" class="glightbox btn" data-type="video"
+            data-title="SKG besucht von OnlyPlants">
+            <div class="video-thumb-container"
+                style="position: relative; display: inline-block; cursor: pointer; max-width: 600px;">
+                <img src="https://img.youtube.com/vi/PPehcVUjqzw/maxresdefault.jpg" alt="SKG Interview"
+                    class="img-fluid rounded shadow" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_play_button_icon_%282013%E2%80%932017%29.svg"
+                    alt="Play Icon" class="play-icon-overlay" />
+            </div>
+        </a>
+    </div>
+</div>

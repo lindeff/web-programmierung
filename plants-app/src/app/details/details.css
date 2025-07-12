@@ -1,0 +1,25 @@
+.background-wrapper {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: whitesmoke;
+}
+
+.video-thumb-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.play-icon-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;      /* 你可以根据需要调整大小 */
+  height: 64px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;  /* 点击事件穿透，不阻止点击图片 */
+  user-select: none;
+  opacity: 0.8;          /* 半透明，显得更好看 */
+}
