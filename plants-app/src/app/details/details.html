@@ -2,14 +2,12 @@
     <app-header></app-header>
 
     <div class="container">
-        <h1 class="text-center mb-4">Anthurium – Allgemeine Infos & Pflegetipps</h1>
-
         <div class="row align-items-start g-4 mb-5">
             <!-- Carousel -->
             <div class="col-md-6">
                 <div id="anthuriumCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner rounded shadow">
-                        <div class="carousel-item active">
+<!--                         <div class="carousel-item active">
                             <img src="assets/mr-worldwide.jpg" class="d-block w-100" alt="Anthurium Bild 1">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Anthurium Mr. Worldwide</h5>
@@ -22,8 +20,17 @@
                                 <h5>Anthurium Antolakii (BVEP/Black Velvet Eastern Panama)</h5>
                                 <p>Wildart aus Guna Yala, Panama</p>
                             </div>
+                        </div> -->
+                        @for (item of carouselItems; track item.name) {
+                        <div class="carousel-item {{item.active ? 'active' : ''}}">
+                            <img [src]=item.imageUrl class="d-block w-100" alt=item.name>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>{{item.name}}</h5>
+                                <p>{{item.origin}}</p>
+                            </div>
                         </div>
-                    </div>
+                        }
+                                            </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#anthuriumCarousel"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
@@ -32,7 +39,7 @@
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </button>
-                </div>
+                    </div>
             </div>
 
             <!-- Text content -->

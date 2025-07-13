@@ -10,27 +10,30 @@ import GLightbox from 'glightbox';
   styleUrl: './details.css'
 })
 export class Details implements AfterViewInit {
-    ngAfterViewInit(): void {
-      GLightbox({
-        selector: '.glightbox',
-      });
-    }
+  ngAfterViewInit(): void {
+    GLightbox({
+      selector: '.glightbox',
+    });
+  }
 
-  anthuriumVarieties = [
+  carouselItems = [
     {
-      name: 'Anthurium andraeanum',
-      image: 'assets/anthurium-andraeanum.jpg',
-      description: 'Bekannt für seine glänzenden roten Hochblätter und den gelben Kolben. Ein Klassiker unter den Zimmerpflanzen.'
+      name: 'Anthurium Antolakii (BVEP/Black Velvet Eastern Panama)',
+      origin: 'Wildart aus Guna Yala, Panama',
+      imageUrl: 'assets/bvep.jpg',
+      active: true
     },
     {
-      name: 'Anthurium clarinervium',
-      image: 'assets/anthurium-clarinervium.jpg',
-      description: 'Samtige, herzförmige Blätter mit auffälliger weißer Aderung. Besonders als Blattschmuckpflanze beliebt.'
+      name: 'Anthurium Mr. Worldwide',
+      origin: 'Hybrid von \'Indo Portillae\' und \'NSE Portillae\'',
+      imageUrl: 'assets/mr-worldwide.jpg',
+            active: false
     },
     {
-      name: 'Anthurium crystallinum',
-      image: 'assets/anthurium-crystallinum.jpg',
-      description: 'Ähnlich wie clarinervium, jedoch mit größeren, filigraneren Blättern.'
+      name: 'Anthurium DocBlock Zara \'29\' x (Michelle x Zara) \'28\'',
+      origin: 'Hybrid von DocBlock',
+      imageUrl: 'assets/zamiza.jpg',
+            active: false
     }
-  ];
+  ]
 }
