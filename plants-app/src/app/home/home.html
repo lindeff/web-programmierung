@@ -2,17 +2,17 @@
   <app-header></app-header>
 
   <div class="content-wrapper">
-    <!-- Your home page main content goes here -->
   </div>
 </div>
 
-<!-- Highlight Section -->
 <div class="highlight-wrapper" [ngStyle]="{ 'background-image': 'url(assets/background-black.jpg)' }">
   <p class="text-center fs-2 title">Highlights</p>
-    <app-plant-card
-      [name]="'Anthurium BVEP/Antolakii'"
-      [price]="30"
-      [coverImageUrl]="'assets/cover-bvep.png'"
-      [hoverImageUrl]="'assets/bvep.jpg'">
+
+  <div class="cards-wrapper">
+    @for (card of anthuriumCards; track card.name) {
+    <app-plant-card [name]="card.name" [price]="card.price" [coverImageUrl]="card.coverImageUrl"
+              [hoverImageUrl]="card.hoverImageUrl" [gallery]="card.gallery ?? []">
     </app-plant-card>
+    }
+  </div>
 </div>

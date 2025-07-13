@@ -22,3 +22,10 @@
   background-position: center;
   padding: 4rem 1rem;
 }
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
