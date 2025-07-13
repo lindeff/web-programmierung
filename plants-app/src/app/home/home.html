@@ -1,8 +1,5 @@
 <div class="background-wrapper" [ngStyle]="{ 'background-image': 'url(assets/background.jpg)' }">
   <app-header></app-header>
-
-  <div class="content-wrapper">
-  </div>
 </div>
 
 <div class="highlight-wrapper" [ngStyle]="{ 'background-image': 'url(assets/background-black.jpg)' }">
@@ -10,8 +7,8 @@
 
   <div class="cards-wrapper">
     @for (card of anthuriumCards; track card.name) {
-    <app-plant-card [name]="card.name" [price]="card.price" [coverImageUrl]="card.coverImageUrl"
-              [hoverImageUrl]="card.hoverImageUrl" [gallery]="card.gallery ?? []">
+    <app-plant-card [name]=card.name [price]=card.price [coverImageUrl]=card.coverImageUrl
+              [hoverImageUrl]=card.hoverImageUrl [gallery]=card.gallery>
     </app-plant-card>
     }
   </div>

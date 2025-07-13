@@ -17,21 +17,31 @@ export class Home {
       coverImageUrl: 'assets/cover-bvep.png',
       hoverImageUrl: 'assets/bvep.jpg',
       gallery: [
-        { href: 'assets/bvep.jpg', title: 'Main view' },
-        { href: 'assets/background-house.jpg', title: 'Side view' },
+        { href: 'assets/bvep.jpg', title: 'Ausgehärtes Blatt' },
+        { href: 'assets/bvep2.jpg', title: 'Blatt im Tageslicht' },
+        { href: 'assets/bvep3.jpg', title: 'Blatt im Tageslicht' },
+        { href: 'assets/bvep4.jpg', title: 'Ausrollendes Blatt' },
       ]
     },
     {
       name: 'Anthurium Mr. Worldwide',
       price: 'NFS',
       coverImageUrl: 'assets/cover-mr-worldwide.png',
-      hoverImageUrl: 'assets/mr-worldwide.jpg'
+      hoverImageUrl: 'assets/mr-worldwide.jpg',
+      gallery: [
+        { href: 'assets/mr-worldwide.jpg', title: 'Ausgehärtes Blatt' },
+      ]
     },
     {
       name: 'Anthurium DocBlock Zara \'29\' x (Michelle x Zara) \'28\'',
       price: 'NFS',
       coverImageUrl: 'assets/zamiza.png',
-      hoverImageUrl: 'assets/zamiza.jpg'
+      hoverImageUrl: 'assets/zamiza.jpg',
+      gallery: [
+        { href: 'assets/zamiza.jpg', title: 'Ausgehärtes Blatt im Tageslicht' },
+        { href: 'assets/zamiza3.jpg', title: 'Blatt 2 in der Vitrine' },
+        { href: 'assets/zamiza2.jpg', title: 'Blatt 3' },
+      ]
     }
   ];
 }
