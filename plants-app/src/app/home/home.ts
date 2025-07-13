@@ -10,6 +10,21 @@ import { Header } from '../components/header/header';
   styleUrl: './home.css'
 })
 export class Home {
+  carouselItems = [
+    {
+      name: '',
+      origin: '',
+      imageUrl: 'assets/monstera-aurea-noise.jpg',
+      active: true
+    },
+    {
+      name: '',
+      origin: '',
+      imageUrl: 'assets/monstera-albo-noise.jpg',
+      active: false
+    }
+  ];
+
   anthuriumCards = [
     {
       name: 'Anthurium BVEP/Antolakii',

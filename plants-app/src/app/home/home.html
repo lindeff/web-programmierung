@@ -1,14 +1,35 @@
 <div class="background-wrapper" [ngStyle]="{ 'background-image': 'url(assets/background.jpg)' }">
   <app-header></app-header>
+  
+  <div class="py-4">
+    <div id="anthuriumCarousel" class="carousel slide mx-auto carousel-container" data-bs-ride="carousel">
+      <div class="carousel-inner rounded shadow">
+        @for (item of carouselItems; track item.name) {
+          <div class="carousel-item {{item.active ? 'active' : ''}}">
+            <img [src]=item.imageUrl class="d-block w-100 carousel-img" alt=item.name>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>{{item.name}}</h5>
+              <p>{{item.origin}}</p>
+            </div>
+          </div>
+        }
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#anthuriumCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#anthuriumCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
 </div>
 
 <div class="highlight-wrapper" [ngStyle]="{ 'background-image': 'url(assets/background-black.jpg)' }">
-  <p class="text-center fs-2 title">Highlights</p>
-
+  <p class="text-center fs-2 title">Meine Favoriten</p>
   <div class="cards-wrapper">
     @for (card of anthuriumCards; track card.name) {
     <app-plant-card [name]=card.name [price]=card.price [coverImageUrl]=card.coverImageUrl
-              [hoverImageUrl]=card.hoverImageUrl [gallery]=card.gallery>
+      [hoverImageUrl]=card.hoverImageUrl [gallery]=card.gallery>
     </app-plant-card>
     }
   </div>
