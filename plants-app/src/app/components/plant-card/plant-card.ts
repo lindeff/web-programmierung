@@ -10,19 +10,16 @@ import GLightbox from 'glightbox';
 })
 export class PlantCard {
   @Input() name!: string;
-  @Input() price!: number;
+  @Input() price!: string;
   @Input() coverImageUrl!: string;
-  @Input() hoverImageUrl!: string; 
+  @Input() hoverImageUrl!: string;
+  @Input() gallery!: { href: string; title: string; }[];
 
   hovered: boolean = false;
 
   lightbox: any;
 
-  gallery = [
-    { href: 'assets/bvep.jpg', title: 'Main view' },
-    { href: 'assets/background-house.jpg', title: 'Side view' },
-  ];
-
+  // Use GLightbox to open the gallery
   openGallery() {
     this.lightbox = GLightbox({
       // @ts-expect-error - elements is supported, just not typed
@@ -40,5 +37,4 @@ export class PlantCard {
   onMouseLeave(event: MouseEvent) {
     this.hovered = false;
   }
-
 }
