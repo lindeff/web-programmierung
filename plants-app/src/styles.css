@@ -1,7 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'source-code-pro-regular';
+  src: url('/assets/fonts/SourceCodePro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'source-code-pro-extrabold-italic';
+  src: url('/assets/fonts/SourceCodePro-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
   height: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
+  font-family: 'source-code-pro-regular' !important;
 }

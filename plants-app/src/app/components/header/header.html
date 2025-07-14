@@ -1,14 +1,24 @@
 <nav class="navbar navbar-light justify-content-center custom-navbar">
+    <a class="navbar-brand" routerLink="/">
+        <img src="assets/logo-name.svg" alt="Logo" width="96" height="96" />
+    </a>
     <ul class="nav">
         <li><a class="nav-link" routerLink="/" routerLinkActive="active"
                 [routerLinkActiveOptions]="{exact: true}">Startseite</a></li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false">
-                Anthurium
+                Kollektion
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" routerLink="/details/info-anthurium">Info</a></li>
-                <li><a class="dropdown-item" routerLink="/details/collection-anthurium">Kollektion</a></li>
+                <li><a class="dropdown-item" routerLink="/details/collection-anthurium">Anthurien</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+                Pflanzenblog
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" routerLink="/details/info-anthurium">Anthurien</a></li>
             </ul>
         </li>
         <li><a class="nav-link" routerLink="/about" routerLinkActive="active">Über Mich</a></li>

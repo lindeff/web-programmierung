@@ -14,6 +14,12 @@ $nav-tabs-link-active-color: darkkhaki;
   }
 }
 
+.nav-link {
+  &.active {
+    color: $nav-tabs-link-active-color;
+  }
+}
+
 .custom-navbar {
     padding-top: 60px;
 }

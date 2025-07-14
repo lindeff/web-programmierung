@@ -14,13 +14,13 @@ export class Home {
   carouselItems = [
     {
       name: 'collection-anthurium',
-      buttonText: 'Zur Kollektion',
+      buttonText: 'ZU ANTHURIEN',
       imageUrl: 'assets/monstera-aurea-noise.jpg',
       active: true
     },
     {
       name: 'info-anthurium',
-      buttonText: 'Infos über Anthurium',
+      buttonText: 'ZUM BLOG',
       imageUrl: 'assets/monstera-albo-noise.jpg',
       active: false
     }
