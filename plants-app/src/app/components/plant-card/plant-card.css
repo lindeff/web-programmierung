@@ -5,7 +5,9 @@
     border-radius: 12px;
     color: #fff;
     text-align: center;
-    margin: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
 }
 
 .plant-card:hover {
@@ -21,4 +23,8 @@
 .image-wrapper img {
     border-radius: 8px;
     object-fit: cover;
+}
+
+.plant-info p {
+  margin-bottom: 4px;
 }

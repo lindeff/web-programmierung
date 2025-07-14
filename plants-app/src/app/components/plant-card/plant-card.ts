@@ -10,6 +10,7 @@ import GLightbox from 'glightbox';
 })
 export class PlantCard {
   @Input() name!: string;
+  @Input() sort!: string;
   @Input() price!: string;
   @Input() coverImageUrl!: string;
   @Input() hoverImageUrl!: string;

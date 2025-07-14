@@ -7,14 +7,18 @@ export const routes: Routes = [
         loadComponent: () => import('./home/home').then(m => m.Home)
     },
     {
-        path: 'details/anthurium',
+        path: 'details/info-anthurium',
         loadComponent: () => import('./details/details').then(m => m.Details)
+    },
+    {
+        path: 'details/collection-anthurium',
+        loadComponent: () => import('./collection/collection').then(m => m.Collection)
     },
     {
         path: 'about',
         loadComponent: () => import('./about/about').then(m => m.About)
     },
-        {
+    {
         path: 'contact',
         loadComponent: () => import('./contact/contact').then(m => m.Contact)
     },

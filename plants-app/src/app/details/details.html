@@ -2,7 +2,7 @@
     <app-header></app-header>
 
     <div class="container">
-        <div class="row align-items-start g-4 mb-5">
+        <div class="row align-items-start g-4 mb-5 mt-5">
             <!-- Carousel -->
             <div class="col-md-6">
                 <div id="anthuriumCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -12,7 +12,7 @@
                             <img [src]=item.imageUrl class="d-block w-100" alt=item.name>
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>{{item.name}}</h5>
-                                <p>{{item.origin}}</p>
+                                <p>{{item.description}}</p>
                             </div>
                         </div>
                         }

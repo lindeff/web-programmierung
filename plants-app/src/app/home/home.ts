@@ -2,24 +2,25 @@ import { NgStyle } from '@angular/common';
 import { AfterViewInit, Component } from '@angular/core';
 import { PlantCard } from '../components/plant-card/plant-card';
 import { Header } from '../components/header/header';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [NgStyle, Header, PlantCard],
+  imports: [NgStyle, Header, PlantCard, RouterLink],
   templateUrl: './home.html',
   styleUrl: './home.css'
 })
 export class Home {
   carouselItems = [
     {
-      name: '',
-      origin: '',
+      name: 'collection-anthurium',
+      buttonText: 'Zur Kollektion',
       imageUrl: 'assets/monstera-aurea-noise.jpg',
       active: true
     },
     {
-      name: '',
-      origin: '',
+      name: 'info-anthurium',
+      buttonText: 'Infos über Anthurium',
       imageUrl: 'assets/monstera-albo-noise.jpg',
       active: false
     }

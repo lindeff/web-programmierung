@@ -1,0 +1,15 @@
+<div class="background-wrapper" [ngStyle]="{ 'background-image': 'url(assets/background-black.jpg)' }">
+  <app-header></app-header>
+
+  <p class="text-center fs-2 mt-5 mb-5 title">Meine Kollektion</p>
+
+  <div class="highlight-wrapper" [ngStyle]="{ 'background-image': 'url(assets/background-black.jpg)' }">
+    <div class="cards-wrapper">
+      @for (card of anthuriumCards; track card.name) {
+      <app-plant-card [name]=card.name [sort]=card.sort [price]=card.price [coverImageUrl]=card.coverImageUrl
+        [hoverImageUrl]=card.hoverImageUrl [gallery]=card.gallery>
+      </app-plant-card>
+      }
+    </div>
+  </div>
+</div>

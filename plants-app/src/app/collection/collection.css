@@ -1,0 +1,24 @@
+.title {
+  color: cornflowerblue;
+  padding-top: 20px;
+}
+
+.background-wrapper {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.highlight-wrapper {
+  background-size: cover;
+  background-position: center;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+}

@@ -1,15 +1,12 @@
 <div class="plant-card" (click)="openGallery()">
-  <div class="image-wrapper" 
-    (mouseenter)="onMouseEnter($event)"
-    (mouseleave)="onMouseLeave($event)">
-    
+  <div class="image-wrapper" (mouseenter)="onMouseEnter($event)" (mouseleave)="onMouseLeave($event)">
 
-      <img class="img-fluid" [src]="hovered ? hoverImageUrl : coverImageUrl" alt="{{name}}">
+    <img class="img-fluid" [src]="hovered ? hoverImageUrl : coverImageUrl" alt="{{name}}">
 
   </div>
 
   <div class="plant-info">
-    <strong>{{ name }}</strong>
-    <p>€ {{ price }}</p>
+    <p class="fw-bold mt-3">{{ name }}</p>
+    <p>{{ sort }}</p>
   </div>
 </div>

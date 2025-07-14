@@ -18,22 +18,16 @@ export class Details implements AfterViewInit {
 
   carouselItems = [
     {
-      name: 'Anthurium Antolakii (BVEP/Black Velvet Eastern Panama)',
-      origin: 'Wildart aus Guna Yala, Panama',
-      imageUrl: 'assets/bvep.jpg',
+      name: 'Pflanzenvitrine',
+      description: 'IKEA FABRIKÖR mit LED-Beleuchtung und Belüftung',
+      imageUrl: 'assets/greenhouse-cabinet.jpg',
       active: true
     },
     {
-      name: 'Anthurium Mr. Worldwide',
-      origin: 'Hybrid von \'Indo Portillae\' und \'NSE Portillae\'',
-      imageUrl: 'assets/mr-worldwide.jpg',
-            active: false
-    },
-    {
-      name: 'Anthurium DocBlock Zara \'29\' x (Michelle x Zara) \'28\'',
-      origin: 'Hybrid von DocBlock',
-      imageUrl: 'assets/zamiza.jpg',
-            active: false
+      name: 'Grow-Tent',
+      description: 'Spider Farmer mit Grow-Lights und Ventilator',
+      imageUrl: 'assets/grow-tent.jpg',
+      active: false
     }
   ]
 }
