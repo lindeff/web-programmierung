@@ -13,13 +13,13 @@ import { RouterLink } from '@angular/router';
 export class Home {
   carouselItems = [
     {
-      name: 'collection-anthurium',
+      name: 'collection',
       buttonText: 'ZU ANTHURIEN',
       imageUrl: 'assets/monstera-aurea-noise.jpg',
       active: true
     },
     {
-      name: 'info-anthurium',
+      name: 'blog',
       buttonText: 'ZUM BLOG',
       imageUrl: 'assets/monstera-albo-noise.jpg',
       active: false

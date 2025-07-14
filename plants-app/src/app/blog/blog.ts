@@ -6,10 +6,10 @@ import GLightbox from 'glightbox';
 @Component({
   selector: 'app-details',
   imports: [Header, CommonModule],
-  templateUrl: './details.html',
-  styleUrl: './details.css'
+  templateUrl: './blog.html',
+  styleUrl: './blog.css'
 })
-export class Details implements AfterViewInit {
+export class Blog implements AfterViewInit {
   ngAfterViewInit(): void {
     GLightbox({
       selector: '.glightbox',

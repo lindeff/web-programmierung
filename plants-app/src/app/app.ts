@@ -11,8 +11,6 @@ import 'glightbox/dist/css/glightbox.min.css';
   styleUrl: './app.css'
 })
 export class App {
-  protected title = 'plants-app';
-
   lightbox = GLightbox({
     selector: '.glightbox'
   });

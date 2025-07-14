@@ -16,10 +16,24 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 64px;      /* 你可以根据需要调整大小 */
+  width: 64px;
   height: 64px;
   transform: translate(-50%, -50%);
-  pointer-events: none;  /* 点击事件穿透，不阻止点击图片 */
+  pointer-events: none;
   user-select: none;
-  opacity: 0.8;          /* 半透明，显得更好看 */
+  opacity: 0.8;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.carousel-caption p {
+  margin-bottom: 5px;
+}
+
+.plant-care-list li {
+  margin-bottom: 20px;
 }

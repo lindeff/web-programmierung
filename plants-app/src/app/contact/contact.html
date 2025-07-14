@@ -3,19 +3,55 @@
     <div class="form-container">
         <div class="form-wrapper">
             <h1 class="text-center">Schreibe mir</h1>
-            <form>
+            <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+                    <label for="inputName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="inputName" name="name" #inputName="ngModel" ngModel
+                        required minlength="2" placeholder="Name" />
+                    @if (contactForm.submitted && inputName.invalid) {
+                    <div class="text-danger mt-1">
+                        @if (inputName.errors?.['required']) {
+                        <small>Name ist erforderlich.</small>
+                        }
+                        @if (inputName.errors?.['minlength']) {
+                        <small>Mindestens 2 Zeichen erforderlich.</small>
+                        }
+                    </div>
+                    }
                 </div>
+
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">E-Mail-Adresse</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="E-Mail">
+                    <label for="inputEmail" class="form-label">E-Mail-Adresse</label>
+                    <input type="email" class="form-control" id="inputEmail" name="email" #inputEmail="ngModel" ngModel
+                        required email placeholder="E-Mail" />
+                    @if (contactForm.submitted && inputEmail.invalid) {
+                    <div class="text-danger mt-1">
+                        @if (inputEmail.errors?.['required']) {
+                        <small>E-Mail ist erforderlich.</small>
+                        }
+                        @if (inputEmail.errors?.['email']) {
+                        <small>Ungültige E-Mail-Adresse.</small>
+                        }
+                    </div>
+                    }
                 </div>
+
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Nachricht</label>
-                    <textarea class="form-control" id="inputText"></textarea>
+                    <label for="inputText" class="form-label">Nachricht</label>
+                    <textarea class="form-control" id="inputText" name="message" #inputText="ngModel" ngModel required
+                        minlength="2" placeholder="Deine Nachricht"></textarea>
+                    @if (contactForm.submitted && inputText.invalid) {
+                    <div class="text-danger mt-1">
+                        @if (inputText.errors?.['required']) {
+                        <small>Nachricht ist erforderlich.</small>
+                        }
+                        @if (inputText.errors?.['minlength']) {
+                        <small>Mindestens 2 Zeichen erforderlich.</small>
+                        }
+                    </div>
+                    }
                 </div>
+
                 <button type="submit" class="btn btn-primary">Nachricht senden</button>
             </form>
         </div>

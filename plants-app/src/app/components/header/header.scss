@@ -17,9 +17,15 @@ $nav-tabs-link-active-color: darkkhaki;
 .nav-link {
   &.active {
     color: $nav-tabs-link-active-color;
+    font-weight: bold;
   }
 }
 
+.nav-item.active>.nav-link {
+  color: $nav-tabs-link-active-color;
+  font-weight: bold;
+}
+
 .custom-navbar {
-    padding-top: 60px;
+  padding-top: 60px;
 }

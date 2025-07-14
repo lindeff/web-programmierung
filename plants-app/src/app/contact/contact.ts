@@ -1,14 +1,20 @@
 import { Component } from '@angular/core';
 import { Header } from '../components/header/header';
-import { Footer } from '../components/footer/footer';
 import { NgStyle } from '@angular/common';
+import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
-  imports: [Header, NgStyle],
+  imports: [Header, NgStyle, FormsModule],
   templateUrl: './contact.html',
   styleUrl: './contact.css'
 })
 export class Contact {
-
+  onSubmit(form: NgForm): void {
+  if (form.valid) {
+    console.log('Formulardaten:', form.value);
+  } else {
+    console.warn('Formular ist ungültig.');
+  }
+}
 }

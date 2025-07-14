@@ -7,11 +7,11 @@ export const routes: Routes = [
         loadComponent: () => import('./home/home').then(m => m.Home)
     },
     {
-        path: 'details/info-anthurium',
-        loadComponent: () => import('./details/details').then(m => m.Details)
+        path: 'anthurium/blog',
+        loadComponent: () => import('./blog/blog').then(m => m.Blog)
     },
     {
-        path: 'details/collection-anthurium',
+        path: 'anthurium/collection',
         loadComponent: () => import('./collection/collection').then(m => m.Collection)
     },
     {

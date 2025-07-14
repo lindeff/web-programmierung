@@ -5,20 +5,20 @@
     <ul class="nav">
         <li><a class="nav-link" routerLink="/" routerLinkActive="active"
                 [routerLinkActiveOptions]="{exact: true}">Startseite</a></li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: false }">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false">
                 Kollektion
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" routerLink="/details/collection-anthurium">Anthurien</a></li>
+                <li><a class="dropdown-item" routerLink="/anthurium/collection">Anthurien</a></li>
             </ul>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: false }">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false">
                 Pflanzenblog
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" routerLink="/details/info-anthurium">Anthurien</a></li>
+                <li><a class="dropdown-item" routerLink="/anthurium/blog">Anthurien</a></li>
             </ul>
         </li>
         <li><a class="nav-link" routerLink="/about" routerLinkActive="active">Über Mich</a></li>

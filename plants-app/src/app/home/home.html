@@ -8,8 +8,8 @@
         <div class="carousel-item {{item.active ? 'active' : ''}}">
           <img [src]=item.imageUrl class="d-block w-100 carousel-img" alt=item.name>
           <div class="carousel-caption d-none d-md-block">
-            <div class="carousel-caption d-none d-md-block">
-              <a [routerLink]="['/details', item.name]" class="fs-1 fst-italic mt-2 ">{{item.buttonText}}</a>
+            <div class="carousel-caption d-none d-md-block text-shadow">
+              <a [routerLink]="['/anthurium', item.name]" class="fs-1 fst-italic mt-2 ">{{item.buttonText}}</a>
             </div>
           </div>
         </div>
