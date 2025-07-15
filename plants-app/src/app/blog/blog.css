@@ -22,6 +22,7 @@
   pointer-events: none;
   user-select: none;
   opacity: 0.8;
+  fill: orangered
 }
 
 .carousel-caption {
