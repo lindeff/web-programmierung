@@ -11,6 +11,7 @@ import 'glightbox/dist/css/glightbox.min.css';
   styleUrl: './app.css'
 })
 export class App {
+  // create a GLightbox instance for image lightbox functionality
   lightbox = GLightbox({
     selector: '.glightbox'
   });

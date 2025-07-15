@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink, RouterModule } from '@angular/router';
 
 @Component({
@@ -8,5 +8,4 @@ import { RouterLink, RouterModule } from '@angular/router';
   styleUrl: './header.scss'
 })
 export class Header {
-  title = signal('Plants App');
 }

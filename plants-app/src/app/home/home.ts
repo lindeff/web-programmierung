@@ -1,5 +1,5 @@
 import { NgStyle } from '@angular/common';
-import { AfterViewInit, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { PlantCard } from '../components/plant-card/plant-card';
 import { Header } from '../components/header/header';
 import { RouterLink } from '@angular/router';

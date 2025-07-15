@@ -30,4 +30,19 @@ export class Blog implements AfterViewInit {
       active: false
     }
   ]
+
+    breederVideos = [
+    {
+      url: 'https://www.youtube.com/watch?v=t4rPIBKM824&t',
+      title: 'Doc Block besucht von OnlyPlants',
+      imageUrl: 'https://img.youtube.com/vi/t4rPIBKM824/maxresdefault.jpg',
+      imageAlt: "Doc Block Interview"
+    },
+    {
+      url: 'https://www.youtube.com/watch?v=PPehcVUjqzw',
+      title: 'SKG besucht von OnlyPlants',
+      imageUrl: 'https://img.youtube.com/vi/PPehcVUjqzw/maxresdefault.jpg',
+      imageAlt: "SKG Interview"
+    }
+  ]
 }

@@ -67,41 +67,24 @@
         </div>
         <div class="text-center">
             <h3 class="mt-5">Bekannte Züchter</h3>
+
+            @for (video of breederVideos; track video.title) {
             <p class="fw-bold fs-4 text-warning shadow-sm p-2 rounded d-inline-block">
                 Doc Block (USA)
             </p>
-        </div>
 
-        <!-- GLightbox video trigger -->
-        <div class="text-center pb-5">
-            <a href="https://www.youtube.com/watch?v=t4rPIBKM824&t" class="glightbox btn" data-type="video"
-                data-title="Doc Block besucht von OnlyPlants">
-                <div class="video-thumb-container"
-                    style="position: relative; display: inline-block; cursor: pointer; max-width: 600px;">
-                    <img src="https://img.youtube.com/vi/t4rPIBKM824/maxresdefault.jpg" alt="Doc Block Interview"
-                        class="img-fluid rounded shadow" />
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_play_button_icon_%282013%E2%80%932017%29.svg"
-                        alt="Play Icon" class="play-icon-overlay" />
-                </div>
-            </a>
-        </div>
-        <div class="text-center">
-            <p class="fw-bold fs-4 text-warning shadow-sm p-2 rounded d-inline-block">
-                Silver Krome Gardens (USA)
-            </p>
-        </div>
-
-        <!-- GLightbox video trigger -->
-        <div class="text-center pb-5">
-            <a href="https://www.youtube.com/watch?v=PPehcVUjqzw" class="glightbox btn" data-type="video"
-                data-title="SKG besucht von OnlyPlants">
-                <div class="video-thumb-container"
-                    style="position: relative; display: inline-block; cursor: pointer; max-width: 600px;">
-                    <img src="https://img.youtube.com/vi/PPehcVUjqzw/maxresdefault.jpg" alt="SKG Interview"
-                        class="img-fluid rounded shadow" />
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_play_button_icon_%282013%E2%80%932017%29.svg"
-                        alt="Play Icon" class="play-icon-overlay" />
-                </div>
-            </a>
+            <!-- GLightbox video trigger -->
+            <div class="text-center pb-5">
+                <a [href]=video.url class="glightbox btn" data-type="video" [attr.data-title]=video.title>
+                    <div class="video-thumb-container"
+                        style="position: relative; display: inline-block; cursor: pointer; max-width: 600px;">
+                        <img [src]=video.imageUrl [alt]=video.imageAlt class="img-fluid rounded shadow" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_play_button_icon_%282013%E2%80%932017%29.svg"
+                            alt="Play Icon" class="play-icon-overlay" />
+                    </div>
+                </a>
+            </div>
+            }
         </div>
     </div>
+</div>

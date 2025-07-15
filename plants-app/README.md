@@ -47,6 +47,10 @@ app/
 - Logo & Icon (custom-made)
 - Private photo collection
 
+## Github Repository
+
+- [plants-app](https://github.com/lindeff/web-programmierung/tree/main/plants-app)
+
 ## Notes
 
 This project is a personal hobby site. All images are private and may not be redistributed.
